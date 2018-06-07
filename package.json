@@ -1,7 +1,7 @@
 {
-  "name": "globally",
+  "name": "omnipresent",
   "version": "1.0.0",
-  "description": "Access your common logic globally🌏🌍🌎.",
+  "description": "Access your common logic everywhere🧞‍♀️.",
   "main": "index.js",
   "scripts": {
     "test": "./test/scripts/test_with_coverage.sh"

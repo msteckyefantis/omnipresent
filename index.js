@@ -1,6 +1,6 @@
 'use strict';
 
-const globalObject = {};
+const ominpresentObject = {};
 
 
 const addGlobally = Object.freeze(
@@ -11,15 +11,15 @@ const addGlobally = Object.freeze(
 
             throw new Error(
                 
-                'globally error: cannot add addGlobally globally'
+                'omnipresent error: cannot add addGlobally globally'
             );
         }
 
-        Object.assign( globalObject, params );
+        Object.assign( ominpresentObject, params );
     }
 );
 
-globalObject.addGlobally = addGlobally;
+ominpresentObject.addGlobally = addGlobally;
 
 
-module.exports = globalObject;
+module.exports = ominpresentObject;

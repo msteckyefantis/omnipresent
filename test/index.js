@@ -3,19 +3,19 @@
 
 const { expect } = require( 'chai' );
 
-const globally = require( '../' );
+const omnipresent = require( '../' );
 
 
 describe( 'index.js', function() {
 
     it( '.addGlobally - normal operation', function() {
 
-        globally.addGlobally({
+        omnipresent.addGlobally({
 
             usefulFunction: x => 2 * x
         });
 
-        expect( globally.usefulFunction( 2 ) ).to.equal( 4 );
+        expect( omnipresent.usefulFunction( 2 ) ).to.equal( 4 );
     });
 
     it( 'error: .addGlobally - trying to add addGlobally to globally', function() {
@@ -24,7 +24,7 @@ describe( 'index.js', function() {
 
         try {
             
-            globally.addGlobally({
+            omnipresent.addGlobally({
 
                 addGlobally: x => 2 * x
             });
@@ -33,7 +33,7 @@ describe( 'index.js', function() {
             
             if(
                 err.message ===
-                'globally error: cannot add addGlobally globally'
+                'omnipresent error: cannot add addGlobally globally'
             ) {
 
                 erroredAsExpected = true;

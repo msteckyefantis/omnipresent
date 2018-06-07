@@ -1,6 +1,6 @@
-# Globally🌍🌎🌏
+# Omnipresent🧞‍♀️
 
-### Access your common logic globally
+### The npm module that lets you access your common logic everywhere
 
 
 #### Example:
@@ -10,7 +10,7 @@
 ```.js
 'use strict';
 
-const { addGlobally } = require( 'globally' );
+const { addGlobally } = require( 'omnipresent' );
 
 
 addGlobally({
@@ -25,7 +25,7 @@ addGlobally({
 ```.js
 'use strict';
 
-const { usefulFunction } = require( 'globally' );
+const { usefulFunction } = require( 'omnipresent' );
 
 
 console.log( usefulFunction( 2 ) ); // logs 4
