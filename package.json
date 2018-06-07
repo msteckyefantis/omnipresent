@@ -1,0 +1,18 @@
+{
+  "name": "globally",
+  "version": "1.0.0",
+  "description": "Access your common logic globally🌏🌍🌎.",
+  "main": "index.js",
+  "scripts": {
+    "test": "./test/scripts/test_with_coverage.sh"
+  },
+  "author": "Michael Stecky-Efantis",
+  "license": "BSD-3-Clause",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.0.1",
+    "proxyquire": "^1.8.0",
+    "sinon": "^4.4.2"
+  }
+}
