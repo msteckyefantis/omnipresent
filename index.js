@@ -1,6 +1,6 @@
 'use strict';
 
-const ominpresentObject = {};
+const omnipresentObject = {};
 
 
 const addGlobally = Object.freeze(
@@ -15,11 +15,11 @@ const addGlobally = Object.freeze(
             );
         }
 
-        Object.assign( ominpresentObject, params );
+        Object.assign( omnipresentObject, params );
     }
 );
 
-ominpresentObject.addGlobally = addGlobally;
+omnipresentObject.addGlobally = addGlobally;
 
 
-module.exports = ominpresentObject;
+module.exports = omnipresentObject;
