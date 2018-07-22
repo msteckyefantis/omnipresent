@@ -1,4 +1,5 @@
 # Omnipresent🧞‍♀️
+[![npm version](https://badge.fury.io/js/omnipresent.svg)](https://badge.fury.io/js/omnipresent) [![Build Status](https://travis-ci.org/msteckyefantis/omnipresent.svg?branch=master)](https://travis-ci.org/msteckyefantis/omnipresent)
 
 ### The npm module that lets you access your common logic everywhere
 
