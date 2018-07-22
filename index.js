@@ -7,7 +7,7 @@ const addGlobally = Object.freeze(
     
     params => {
 
-        if( !!params.addGlobally ) {
+        if( params.hasOwnProperty( 'addGlobally' ) ) {
 
             throw new Error(
                 

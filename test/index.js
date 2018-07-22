@@ -20,26 +20,39 @@ describe( 'index.js', function() {
 
     it( 'error: .addGlobally - trying to add addGlobally to globally', function() {
 
-        let erroredAsExpected = false;
+        let erroredAsExpectedCount = 0;
 
-        try {
+        const values = [
+
+            () => {},
+            '',
+            undefined,
+            null,
+            [],
+            new Buffer( [69] )
+        ];
+
+        values.forEach( value => {
+
+            try {
             
-            omnipresent.addGlobally({
-
-                addGlobally: x => 2 * x
-            });
-
-        } catch( err ) {
-            
-            if(
-                err.message ===
-                'omnipresent error: cannot add addGlobally globally'
-            ) {
-
-                erroredAsExpected = true;
+                omnipresent.addGlobally({
+    
+                    addGlobally: value
+                });
+    
+            } catch( err ) {
+                
+                if(
+                    err.message ===
+                    'omnipresent error: cannot add addGlobally globally'
+                ) {
+    
+                    erroredAsExpectedCount++;
+                }
             }
-        }
+        });
 
-        expect( erroredAsExpected ).to.be.true;
+        expect( erroredAsExpectedCount ).to.equal( values.length );
     });
 });
